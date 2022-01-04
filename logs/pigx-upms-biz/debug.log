@@ -1,0 +1,30 @@
+2022-01-04 15:03:46,473 [Thread-99] INFO  [com.netflix.loadbalancer.PollingServerListUpdater] PollingServerListUpdater.java:53 - Shutting down the Executor Pool for PollingServerListUpdater
+2022-01-04 15:03:46,512 [Thread-72] INFO  [c.a.cloud.nacos.registry.NacosServiceRegistry] NacosServiceRegistry.java:74 - De-registering from Nacos Server now...
+2022-01-04 15:03:46,516 [Thread-72] INFO  [c.a.cloud.nacos.registry.NacosServiceRegistry] NacosServiceRegistry.java:93 - De-registration finished.
+2022-01-04 15:03:46,524 [Thread-72] INFO  [o.s.scheduling.concurrent.ThreadPoolTaskExecutor] ExecutorConfigurationSupport.java:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-01-04 15:03:46,527 [task-1] ERROR [o.s.a.i.SimpleAsyncUncaughtExceptionHandler] SimpleAsyncUncaughtExceptionHandler.java:39 - Unexpected exception occurred invoking async method: public void com.pig4cloud.pigx.admin.service.impl.ZxUserServiceImpl.setupConsumer4PreBatchUsersTask()
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048)
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+	at com.pig4cloud.pigx.admin.service.impl.ZxUserServiceImpl.setupConsumer4PreBatchUsersTask(ZxUserServiceImpl.java:885)
+	at com.pig4cloud.pigx.admin.service.impl.ZxUserServiceImpl$$FastClassBySpringCGLIB$$b7fc992e.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:115)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2022-01-04 15:04:11,512 [Thread-72] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:2003 - {dataSource-1} closing ...
+2022-01-04 15:04:11,517 [Thread-72] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:2075 - {dataSource-1} closed
+2022-01-04 15:04:11,520 [Thread-72] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:2003 - {dataSource-2} closing ...
+2022-01-04 15:04:11,520 [Thread-72] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:2075 - {dataSource-2} closed
+2022-01-04 15:04:11,521 [Thread-72] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:2003 - {dataSource-3} closing ...
+2022-01-04 15:04:11,522 [Thread-72] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:2075 - {dataSource-3} closed
+2022-01-04 15:04:11,525 [Thread-72] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:2003 - {dataSource-4} closing ...
+2022-01-04 15:04:11,525 [Thread-72] INFO  [com.alibaba.druid.pool.DruidDataSource] DruidDataSource.java:2075 - {dataSource-4} closed
+2022-01-04 15:04:11,669 [Thread-72] INFO  [io.undertow.servlet] ServletContextImpl.java:364 - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-01-04 15:04:11,674 [Thread-72] INFO  [io.undertow] Undertow.java:252 - stopping server: Undertow - 2.0.27.Final
